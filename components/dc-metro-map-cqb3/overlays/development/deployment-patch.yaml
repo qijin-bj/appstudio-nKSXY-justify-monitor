@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-cqb3
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/ex-registry-tvso-tenant/appstudio/dc-metro-map-cqb3@sha256:1989ff5d4bd20efdcef96f40abe2d43279478a4a8b793b79d0b06ca035f8353c
+        name: my-nodejs
+        resources: {}
+status: {}
